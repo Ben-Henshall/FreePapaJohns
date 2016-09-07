@@ -20,8 +20,10 @@ for points in NUM_OF_POINTS_TO_STOP_ON:
 EMAILNAME = "emailstart"
 EMAILPROVIDER = "@provider.co.uk"
 
-NUM_TO_START_AT = 0
-i = NUM_TO_START_AT
+# Change this to a new value everytime you restart the bot
+PLUS_PREFIX = "aa"
+
+i = 0
 
 won = False
 while not won:
@@ -30,7 +32,7 @@ while not won:
 	driver = webdriver.Chrome()
 	driver.set_window_size(1200, 600)
 
-	emailstring = "%s+%i%s" %(EMAILNAME, i, EMAILPROVIDER)
+	emailstring = "%s+%s%i%s" %(EMAILNAME,PLUS_PREFIX, i, EMAILPROVIDER)
 
 	driver.get(URL)
 	
