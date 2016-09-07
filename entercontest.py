@@ -13,10 +13,10 @@ for points in NUM_OF_POINTS_TO_STOP_ON:
 	winningurl = "http://www.papajohns.co.uk/paparewards/images/reveal-%s-points.gif" %points
 	WINNING_URLS.append(winningurl)
 
-EMAILNAME = "ilikespam"
-EMAILPROVIDER = "@hotmail.co.uk"
+EMAILNAME = "email"
+EMAILPROVIDER = "@emailprovider.co.uk"
 
-NUM_TO_START_AT = 175
+NUM_TO_START_AT = 0
 i = NUM_TO_START_AT
 
 won = False
