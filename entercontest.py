@@ -7,7 +7,7 @@ user_agent = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) " + "AppleWebKit/5
 # 8 = small sides, drink
 # 12 = big sides
 # 25 = large pizza!
-NUM_OF_POINTS_TO_STOP_ON = ["25"] 
+NUM_OF_POINTS_TO_STOP_ON = ["8", "12","25"] 
 
 URL = "http://www.papajohns.co.uk/paparewards/"
 
@@ -17,11 +17,11 @@ for points in NUM_OF_POINTS_TO_STOP_ON:
 	winningurl = "http://www.papajohns.co.uk/paparewards/images/reveal-%s-points.gif" %points
 	WINNING_URLS.append(winningurl)
 
-EMAILNAME = "ilikespam"
-EMAILPROVIDER = "@hotmail.co.uk"
+EMAILNAME = "email"
+EMAILPROVIDER = "@provider.co.uk"
 
 # Change this to a new value everytime you restart the bot
-PLUS_PREFIX = "aj"
+PLUS_PREFIX = "aa"
 
 i = 0
 
