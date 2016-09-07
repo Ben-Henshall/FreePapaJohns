@@ -7,7 +7,7 @@ user_agent = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) " + "AppleWebKit/5
 # 8 = small sides, drink
 # 12 = big sides
 # 25 = large pizza!
-NUM_OF_POINTS_TO_STOP_ON = ["8", "12", "25"] 
+NUM_OF_POINTS_TO_STOP_ON = ["25"] 
 
 URL = "http://www.papajohns.co.uk/paparewards/"
 
@@ -17,11 +17,11 @@ for points in NUM_OF_POINTS_TO_STOP_ON:
 	winningurl = "http://www.papajohns.co.uk/paparewards/images/reveal-%s-points.gif" %points
 	WINNING_URLS.append(winningurl)
 
-EMAILNAME = "emailstart"
-EMAILPROVIDER = "@provider.co.uk"
+EMAILNAME = "ilikespam"
+EMAILPROVIDER = "@hotmail.co.uk"
 
 # Change this to a new value everytime you restart the bot
-PLUS_PREFIX = "aa"
+PLUS_PREFIX = "aj"
 
 i = 0
 
@@ -31,6 +31,7 @@ while not won:
 	#while not won:
 	driver = webdriver.Chrome()
 	driver.set_window_size(1200, 600)
+	driver.set_page_load_timeout(60)
 
 	emailstring = "%s+%s%i%s" %(EMAILNAME,PLUS_PREFIX, i, EMAILPROVIDER)
 
